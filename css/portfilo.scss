@@ -1,0 +1,219 @@
+//--the portfilo section starts here--//
+.portfilo__seciton {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8em;
+
+  .portfilo__title {
+    // border: var(--text-border);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1em 0;
+    text-align: center;
+
+    h1 {
+      text-transform: capitalize;
+      font-family: var(--font-base);
+      color: var(--color-crimson);
+      font-size: 2.5em;
+      margin-bottom: 3em;
+    }
+
+    h2 {
+      text-transform: capitalize;
+      font-family: var(--font-base);
+      color: var(--color-golden);
+      font-size: 4em;
+    }
+
+    .heading__clip {
+      align-self: flex-end;
+
+      h3 {
+        font-size: 2.4em;
+        font-family: var(--font-base);
+        color: var(--color-deep-orange);
+        letter-spacing: 1px;
+      }
+    }
+
+    .heading__clip:hover {
+      cursor: pointer;
+      background-color: var(--color-nav);
+
+      h3 {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  .portfilo__project {
+    // border: var(--text-border);
+
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-gap: 4em 2em;
+    padding: 1em;
+    margin-top: 5em;
+    justify-content: center;
+    align-items: start;
+    height: fit-content;
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      background-color: var(--color-nav);
+
+      //border: var(--text-border);
+
+      .project__img {
+        // border: var(--text-border);
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        position: relative;
+        width: 100%;
+        height: 22em;
+      }
+      .project__detials {
+        display: flex;
+        flex-direction: column;
+
+        .detials__date {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 2px solid var(--color-black);
+          padding: 1em 0.5em;
+
+          .date__right {
+            text-align: center;
+
+            h1 {
+              font-family: var(--font-base);
+              font-size: 1.5em;
+              color: var(--color-crimson);
+            }
+
+            p {
+              font-family: var(--font-alt);
+              font-size: 0.9em;
+              color: var(--color-white);
+            }
+          }
+
+          .date__onprogress {
+            text-align: center;
+
+            .date__left {
+              font-family: var(--font-alt);
+              font-size: 0.9em;
+              color: var(--color-white);
+            }
+
+            p {
+              font-family: var(--font-base);
+              font-size: 1.5em;
+              color: var(--color-crimson);
+            }
+          }
+        }
+
+        .detials {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          margin: 3em 0 1.5em 0;
+          padding: 0 1em;
+
+          h1 {
+            font-family: var(--font-base);
+            font-size: 2.5em;
+            color: var(--color-golden);
+            margin-bottom: 1em;
+          }
+
+          p {
+            font-family: var(--font-alt);
+            font-size: 1.43em;
+            line-height: 1.5em;
+            color: var(--color-white);
+          }
+
+          button {
+            margin-top: 2em;
+            margin-right: 5em;
+            font-size: 1.8em;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  backdrop-filter: blur(5em);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.project:hover {
+  cursor: pointer;
+
+  .cover {
+    height: 100%;
+  }
+  .github__demo {
+    opacity: 1.2;
+  }
+  .github__demo:hover {
+    color: var(--color-deep-orange);
+    font-weight: 500;
+  }
+
+  .fa-eye {
+    opacity: 1.2;
+  }
+  .fa-eye:hover {
+    font-weight: 500;
+  }
+}
+
+.github__demo {
+  font-size: 2em;
+  font-family: var(--font-base);
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: var(--color-golden);
+  z-index: 2;
+  opacity: 0;
+}
+
+.fa-eye {
+  font-size: 2em;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  color: var(--color-golden);
+  z-index: 2;
+  opacity: 0;
+}
+//--the portfilo section ends here--//

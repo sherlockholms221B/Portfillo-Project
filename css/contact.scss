@@ -1,0 +1,256 @@
+
+
+//--the contact section starts here--//
+.contact__container{
+    // border: var(--boder-sec);
+     margin-top: var(--section-margin);
+
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: center;
+     align-items: center;
+     padding: 3em 0 25em 0;
+
+     .contact__title{
+         // border: var(--text-border);
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          padding: 1em 0;
+          margin: 2em 0 3em 0;
+          text-align: center;
+
+         .heading__clip{
+              margin-bottom: 4em;
+
+               h1{
+                    text-transform: capitalize;
+                    font-size: 3em;
+                    font-family: var(--font-base);
+                    color: var(--color-white);
+               }
+          }
+
+         .heading__clip:hover{
+               background-color: var(--color-nav);
+
+               h1:hover{
+                    color: var(--color-golden);
+               }
+          }
+          h1{
+               font-family: var(--font-base);
+               font-size: 4em;
+               color: var(--color-golden);
+               margin-bottom: .3em;
+          }
+          h2{
+               align-self: flex-end;
+               font-family: var(--font-base);
+               font-size: 2em;
+               color: var(--color-crimson); 
+          }
+     
+     }
+
+     .contact__ditails{
+         // border: var(--text-border);
+
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          align-items: center;
+          padding: 2em 0 3em 0 ;
+          width: 100%;
+          margin: 2em 0 5em 0;
+
+          .ditails__box{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+
+               .fa-solid{
+
+                    font-size: 3em;
+                    margin-bottom: 10px;
+                    color: var(--color-pink);
+               }
+
+               .fa-solid:hover{
+                    color: var(--color-white);
+               }
+
+               h1{
+                    font-size: 2em;
+                    font-family: var(--font-base);
+                    color: var(--color-golden);
+                    text-transform: capitalize;
+                    margin: .3em 0;
+               }
+               
+               p{
+                    font-family: var(--font-alt);
+                    font-size: 1.4em;
+                    color: white;
+               }
+          }
+     }
+
+     .section__contact__me{
+         // border: var(--text-border);
+
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+          position: relative;
+          padding: 3em 0 25em 2em;
+          background-color: var(--color-black);
+
+          .contact__me__email{
+               border: 2px solid var(--color-white);
+               padding: 2em 0;
+               margin: 0 0 0 3em;
+               width: 60%;
+
+               form{
+                    //border: var(--text-border);
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    input[type = text], input[type = email]{
+                         width: 70%;
+                         padding: .5em .5em;
+                         font-size: 2em;
+                         outline: none;
+                         margin: .5em 0;
+                         background: var(--color-nav);
+                         border: 2px solid var(--color-white);
+                         border-radius: 5px;
+                         font-family: var(--font-base);
+                         color: var(--color-white);
+                    }
+
+                    textarea{
+                         border: var(--text-border);
+                         width: 70%;
+                         height: 10em;
+                         font-size: 2em;
+                         color: var(--color-white);
+                         font-family: var(--font-base);
+                         border: 2px solid var(--color-white);
+                         outline: none;
+                         padding: .5em .5em;
+                         background: var(--color-nav);
+                         border-radius: 5px;
+                         margin: .5em 0;
+
+                    }
+
+                    input[type = text]::placeholder, input[type = email]::placeholder,textarea::placeholder{
+                         font-family: var(--font-base);
+                    }
+                    input[type = text]:focus, input[type = email]:focus,textarea:focus{
+                         border: none;
+                         box-shadow: 0 0 .5em var(--color-black);
+                    }
+                    
+                    
+
+                    input[type = submit]{
+                         align-self: flex-end;
+                         margin: .5em 1em .5em 0;
+                    }
+               }
+          }
+
+          .contact__me__newsletter{
+               // border: var(--text-border);
+               
+               width: 50%;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               border: 2px solid var(--color-white);
+               position: absolute;
+               right: 25%;               
+               bottom: -23%;
+               text-align: center;
+               h2{
+                    font-family: var(--font-base);
+                    font-size: 2.5em;
+                    color: var(--color-crimson);
+                    margin-bottom: 5em;
+                    margin-top: 2em;
+                    position: relative;
+                    z-index: 3;
+               }
+               h2::after{
+                    content: '';
+                    position: absolute;
+                    width: 60%;
+                    height: 20%;
+                    background-color: var(--color-golden);
+                    bottom: 3px;left: calc(50% - 30%);
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+               }
+     
+               h1{
+                    font-family: var(--font-base);
+                    font-size: 4em;
+                    color: var(--color-crimson);
+                    margin-bottom: .3em;
+               }
+               p{
+                    font-family: var(--font-base);
+                    font-size: 1.5em;
+                    color: var(--color-crimson);
+                    margin-bottom: .3em; 
+               }
+     
+               form{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    margin: 1em 0;
+     
+                    input[type = email]{
+                         width: 70%;
+                         padding: .5em .5em;
+                         font-size: 2em;
+                         outline: none;
+                         font-family: var(--font-base);
+                         border-radius: 5px;
+                         font-size: 2em;
+                         color: var(--color-white);
+                         font-family: var(--font-base);
+                        
+                         
+                    }
+
+                    input[type = email]::placeholder{
+                         font-family: var(--font-base);
+                    }
+                    input[type = email]:focus{
+                         background-color: var(--color-nav);
+                         border: 2px solid var(--color-white);
+                    }
+      
+               }
+          }
+
+     }
+     
+}
+//--the contact section ends here--//
+

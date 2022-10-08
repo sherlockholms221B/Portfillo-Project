@@ -1,0 +1,328 @@
+.skills {
+  padding-top: 15em;
+  padding-bottom: 30em;
+}
+
+.skills .skills__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skills__container .container__skills--box {
+  background-color: var(--color-black);
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: 40em;
+  width: 90%;
+  padding: 2em;
+  margin-top: 20em;
+  position: relative;
+}
+
+.skills .skills__container .container__skills--box .skills__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+  text-align: center;
+  margin: 1em;
+}
+
+.skills .skills__container .container__skills--box .skills__description h1 {
+  font-family: var(--font-base);
+  color: var(--color-crimson);
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.skills .skills__container .container__skills--box .skills__description p {
+  font-family: var(--font-alt);
+  font-size: 1.2em;
+  color: var(--color-white);
+  line-height: 1.8em;
+  margin-top: 1em;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box {
+  -webkit-box-shadow: 0 0 0.5em var(--color-gray);
+          box-shadow: 0 0 0.5em var(--color-gray);
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 22em;
+  height: 30em;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption {
+  background-color: var(--color-nav);
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  width: 90%;
+  height: 95%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  padding: 0 .2em;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption .caption {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption .caption h1 {
+  font-family: var(--font-base);
+  font-size: 2em;
+  color: var(--color-golden);
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption .caption .caption__img {
+  border-radius: 50%;
+  background-color: var(--color-deep-orange);
+  -webkit-box-shadow: 0 0 5px var(--color-black);
+          box-shadow: 0 0 5px var(--color-black);
+  width: 7em;
+  height: 7em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption .caption .caption__img i {
+  font-size: 3.5em;
+  color: var(--color-white);
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption P {
+  color: var(--color-white);
+  font-size: 1.19em;
+  font-family: var(--font-alt);
+  margin: 3em 0 0 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  line-height: 1.5em;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption P span:hover {
+  color: var(--color-golden);
+  cursor: progress;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption .togle {
+  border-top-left-radius: 80em;
+  border-bottom-left-radius: 80em;
+  -webkit-box-shadow: 0 0 1em var(--color-black);
+          box-shadow: 0 0 1em var(--color-black);
+  position: absolute;
+  width: 0;
+  height: 20%;
+  visibility: hidden;
+  right: 0;
+  bottom: calc(50% - 10%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption .togle i {
+  font-size: 2em;
+  color: var(--color-golden);
+  margin-left: 8px;
+  visibility: hidden;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption .fa-solid {
+  font-size: 30px;
+  margin-right: 10px;
+  color: var(--color-deep-orange);
+  cursor: pointer;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption:hover .togle {
+  visibility: visible;
+  width: 20%;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .container__skills-box .skills-box__caption:hover .togle i {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .box__one {
+  bottom: -40%;
+  right: 2%;
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .box__two {
+  bottom: -40%;
+  right: calc(4% + 22em);
+}
+
+.skills .skills__container .container__skills--box .skill__display__flex .box__three {
+  bottom: -40%;
+  right: calc(44em + 6%);
+}
+
+.container__skills-box-ditaills {
+  position: absolute;
+  width: 130%;
+  padding: .5em 2em;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  z-index: 3;
+  background-color: var(--color-nav);
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  -webkit-backdrop-filter: blur(5em);
+          backdrop-filter: blur(5em);
+  right: 2%;
+  display: none;
+}
+
+.container__skills-box-ditaills .skills-box__ditaills {
+  margin: 3em 0;
+  position: relative;
+}
+
+.container__skills-box-ditaills .skills-box__ditaills .ditaills {
+  position: absolute;
+  color: white;
+  font-size: 1.4em;
+  font-family: var(--font-base);
+}
+
+.container__skills-box-ditaills .skills-box__ditaills .ditaills_one {
+  top: -1.5em;
+  left: 0;
+}
+
+.container__skills-box-ditaills .skills-box__ditaills .ditaills_two {
+  right: 0;
+  top: -1.5em;
+}
+
+.container__skills-box-ditaills .skills-box__ditaills .ditaills__percentage-box {
+  width: 100%;
+  background-color: rgba(29, 35, 39, 0.608);
+  -webkit-box-shadow: 0 0 0.6rem var(--color-black);
+          box-shadow: 0 0 0.6rem var(--color-black);
+  border: 0.5px solid var(--color-nav);
+  border-radius: 2px;
+}
+
+.container__skills-box-ditaills .skills-box__ditaills .ditaills__percentage-box .percentage {
+  width: 60%;
+  padding: .4em;
+  background-color: #E97705;
+  border-radius: 2px;
+  border: none;
+}
+
+.container__skills-box-ditaills .togle__skills {
+  -webkit-box-shadow: -0.3em 0 0.3em var(--color-gray);
+          box-shadow: -0.3em 0 0.3em var(--color-gray);
+  border: 1px solid var(--color-crimson);
+  width: 15%;
+  height: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+}
+
+.container__skills-box-ditaills .togle__skills i {
+  font-size: 3em;
+  color: white;
+}
+
+.show__containerSkillsbox {
+  display: block;
+  -webkit-animation: animateEmailme 1s linear forwards;
+          animation: animateEmailme 1s linear forwards;
+}
+/*# sourceMappingURL=skills.css.map */

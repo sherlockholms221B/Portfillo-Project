@@ -1,0 +1,269 @@
+.portfilo__seciton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 8em;
+}
+
+.portfilo__seciton .portfilo__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.portfilo__seciton .portfilo__title h1 {
+  text-transform: capitalize;
+  font-family: var(--font-base);
+  color: var(--color-crimson);
+  font-size: 2.5em;
+  margin-bottom: 3em;
+}
+
+.portfilo__seciton .portfilo__title h2 {
+  text-transform: capitalize;
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-size: 4em;
+}
+
+.portfilo__seciton .portfilo__title .heading__clip {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.portfilo__seciton .portfilo__title .heading__clip h3 {
+  font-size: 2.4em;
+  font-family: var(--font-base);
+  color: var(--color-deep-orange);
+  letter-spacing: 1px;
+}
+
+.portfilo__seciton .portfilo__title .heading__clip:hover {
+  cursor: pointer;
+  background-color: var(--color-nav);
+}
+
+.portfilo__seciton .portfilo__title .heading__clip:hover h3 {
+  color: var(--color-white);
+}
+
+.portfilo__seciton .portfilo__project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 28% 28% 28%;
+      grid-template-columns: 28% 28% 28%;
+  grid-gap: 4em 2em;
+  padding: 1em;
+  margin-top: 5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.portfilo__seciton .portfilo__project .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 8px;
+  background-color: var(--color-nav);
+}
+
+.portfilo__seciton .portfilo__project .project .project__img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: relative;
+  width: 100%;
+  height: 22em;
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid var(--color-black);
+  padding: 1em .5em;
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials__date .date__right {
+  text-align: center;
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials__date .date__right h1 {
+  font-family: var(--font-base);
+  font-size: 1.5em;
+  color: var(--color-crimson);
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials__date .date__right p {
+  font-family: var(--font-alt);
+  font-size: .9em;
+  color: var(--color-white);
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials__date .date__onprogress {
+  text-align: center;
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials__date .date__onprogress .date__left {
+  font-family: var(--font-alt);
+  font-size: .9em;
+  color: var(--color-white);
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials__date .date__onprogress p {
+  font-family: var(--font-base);
+  font-size: 1.5em;
+  color: var(--color-crimson);
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em 0 1.5em 0;
+  padding: 0 1em;
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials h1 {
+  font-family: var(--font-base);
+  font-size: 2.5em;
+  color: var(--color-golden);
+  margin-bottom: 1em;
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials p {
+  font-family: var(--font-alt);
+  font-size: 1.43em;
+  line-height: 1.5em;
+  color: var(--color-white);
+}
+
+.portfilo__seciton .portfilo__project .project .project__detials .detials button {
+  margin-top: 2em;
+  margin-right: 5em;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  -webkit-backdrop-filter: blur(5em);
+          backdrop-filter: blur(5em);
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.project:hover {
+  cursor: pointer;
+}
+
+.project:hover .cover {
+  height: 100%;
+}
+
+.project:hover .github__demo {
+  opacity: 1.2;
+}
+
+.project:hover .github__demo:hover {
+  color: var(--color-deep-orange);
+  font-weight: 500;
+}
+
+.project:hover .fa-eye {
+  opacity: 1.2;
+}
+
+.project:hover .fa-eye:hover {
+  font-weight: 500;
+}
+
+.github__demo {
+  font-size: 2em;
+  font-family: var(--font-base);
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: var(--color-golden);
+  z-index: 2;
+  opacity: 0;
+}
+
+.fa-eye {
+  font-size: 2em;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  color: var(--color-golden);
+  z-index: 2;
+  opacity: 0;
+}
+/*# sourceMappingURL=portfilo.css.map */

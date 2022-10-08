@@ -1,0 +1,238 @@
+
+
+//--the about container starts here--//
+.about{
+     .about__container{
+         // border: var(--text-border);
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-auto-flow: row;
+          position:relative;
+     
+          .about__container__up{
+               //border: 3px solid red;
+               padding-top: 5em;
+               padding-bottom: 20em;
+     
+     
+               
+               .container__text{
+                   // border: var(--text-border);
+                    margin: 0 5em 0 2em;
+                    padding: 1em .5em;
+                    border-radius: 1em;
+                    
+                    .text__wraper__about{
+                         display: flex;
+                         flex-direction: column;
+                         flex-wrap: nowrap;
+                         justify-content: center;
+                         align-items: center;
+          
+                         .hello, h1{
+                              text-decoration: none;
+                              font-weight: 500;
+                              font-size: 3.2em;
+                              font-family: var(--font-base);
+                              color: var(--color-white);
+                              align-self: flex-start;
+                              margin-bottom: .8em;
+                              margin-left: 1em;  
+                         
+                              span{
+                                   font-size: 1.3em;
+                                   font-weight: 580;
+                                   text-transform: capitalize;
+                                   color: var(--color-deep-orange);
+          
+                              }
+                              
+                         }
+                         .and{
+                              color: var(--color-crimson);
+                              font-size: 2.5em;
+                              font-family: var(--font-base);
+                              margin: .5em 0;
+                         }
+                         .hero__name{
+                              font-size: 6em;
+                              font-family: var(--font-heroName);
+                              letter-spacing:1px ;
+                              text-transform: capitalize;
+                              color: var(--color-golden);
+                              position: relative;
+                         
+                         }
+
+          
+                         h1{
+                              align-self: center;
+                              margin: 0 0 1.2em 0;
+                         }
+          
+                         .hero__para{
+                             
+                              margin: 0 2em 1em 2em;      
+                              border-radius:3px;
+                              background-color: var(--color-black);
+                              padding: 1em;
+                              border-radius: 4px;
+                              transition: all .5s ease-in-out;
+                              
+                              .para{
+                                   font-size: 1.6em;
+                                   font-family: var(--font-alt);
+                                   line-height: 2em;
+                                   letter-spacing: 2px;
+                                   color: var(--color-white);  
+                                   padding: .5em .5em;
+                                   border: 1px  solid var(--color-golden);
+                                   border-radius:3px;
+
+                              }
+                         }
+
+                         .hero__para:hover{
+                              border: 3px solid var(--color-gray);
+
+                              .para{
+                                   border:none;
+                              }
+                         }
+
+                       
+                    }
+          
+                  
+               }
+            
+          }
+
+       
+          .about__container__down{
+               background: url('/images/Profile__about__2.jpg');
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-attachment: fixed;
+               background-position:  -12em -2em ;
+               position: absolute;
+
+
+               bottom: -20%;
+               border-radius:1em;
+               border: .5em solid var(--color-golden);
+               width: 60em;
+               height: 30em;
+               margin: 0 0  0 3em ;
+               
+
+
+               display: flex;
+               flex-direction: column;
+               align-items: flex-start;
+               justify-content: space-between;
+     
+
+               .down__up{
+
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .down__left{
+                         background-color: var(--color-nav);
+                         border-top-right-radius: 2em;
+                         border-bottom-left-radius: 2em;
+     
+                         margin: 2em 0 0 1em;
+                         display: flex;
+                         flex-flow: column nowrap;
+                         align-items: center;
+                         justify-content: center;
+          
+                         .left{
+                              
+                              border-top-right-radius: 2em;
+                              border-bottom-left-radius: 2em;
+                              border: 1px solid var(--color-gray);
+                              box-shadow: 0 0 5px var(--color-light-grey);
+                              margin: 1em;
+                              padding: 1em;
+          
+          
+                              li{
+                                   margin: 1em 0;
+                                   font-size: 1em;
+                                   font-family: var(--font-alt);
+                                   color: var(--color-crimson);
+          
+          
+                                   span{
+                                        margin: 1em 0;
+                                        font-size: 1.5em;
+                                        font-family: var(--font-base);
+                                        color: var(--color-crimson);
+          
+          
+                                   }
+                                   
+                              }
+                         }
+                      
+                    }
+                    .down__right{
+                         background-color: var(--color-nav);
+                         border-top-right-radius: 2em;
+                         border-bottom-left-radius: 2em;
+     
+                         margin: 2em 1em 0 0;
+                         display: flex;
+                         flex-flow: column nowrap;
+                         align-items: center;
+                         justify-content: center;
+          
+                         .right{
+                              
+                              border-top-right-radius: 2em;
+                              border-bottom-left-radius: 2em;
+                              border: 1px solid var(--color-gray);
+                              box-shadow: 0 0 5px var(--color-light-grey);
+                              margin: 1em;
+                              padding: 1em;
+          
+          
+                              li{
+                                   margin: 1em 0;
+                                   font-size: 1em;
+                                   font-family: var(--font-alt);
+                                   color: var(--color-crimson);
+          
+          
+                                   span{
+                                        margin: 1em 0;
+                                        font-size: 1.5em;
+                                        font-family: var(--font-base);
+                                        color: var(--color-crimson);
+          
+          
+                                   }
+                              }
+                         }
+                    }
+      
+               }
+
+               .hire__me{
+                    margin-bottom: .5em;
+                    margin-left: 1em;
+               }
+          }
+     }
+     
+
+    
+}
+
+//--the about container ends here--//

@@ -1,0 +1,265 @@
+.header .container__header {
+  padding: 1.5em 0;
+  background-color: transparent;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+  grid-auto-flow: row;
+}
+
+.header .container__header .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-animation: animate__nav 3s linear forwards;
+          animation: animate__nav 3s linear forwards;
+}
+
+.header .container__header .header__logo a {
+  color: var(--color-golden);
+  font-size: 3em;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  z-index: 3;
+  font-family: var(--font-base);
+}
+
+.header .container__header .header__logo a span {
+  font-size: 1.3em;
+  font-family: var(--font-heroName);
+  color: var(--color-golden);
+}
+
+.header .container__header .header__logo img {
+  position: absolute;
+  width: 4.5em;
+  height: 5em;
+  bottom: -.3rem;
+}
+
+.header .container__header .header__logo::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  right: 4em;
+  top: 1em;
+  border-top: 5px solid var(--color-nav);
+  border-right: 5px solid var(--color-nav);
+  border-radius: 3px;
+}
+
+.header .container__header .header__logo::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 15px;
+  left: 4em;
+  bottom: 0;
+  border-bottom: 5px solid var(--color-nav);
+  border-left: 5px solid var(--color-nav);
+  border-radius: 3px;
+}
+
+.header .container__header .header__navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  grid-auto-flow: row;
+}
+
+.header .container__header .header__navigation .navigation__links .fa-xmark {
+  display: none;
+}
+
+.header .container__header .header__navigation .navigation__links .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.header .container__header .header__navigation .navigation__links .line a {
+  color: var(--color-white);
+  font-size: 1.5em;
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style: none;
+  margin: 0 1.8rem;
+  position: relative;
+}
+
+.header .container__header .header__navigation .navigation__links .line a:hover {
+  font-weight: 100;
+  color: var(--color-gray);
+}
+
+.header .container__header .header__navigation .navigation__links .navigation__let-talk-alt {
+  display: none;
+}
+
+.header .container__header .header__navigation .navigation__let-talk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container__header .header__navigation .navigation__let-talk .let-talk__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: .2em;
+}
+
+.header .container__header .header__navigation .navigation__let-talk .let-talk__socials .socials {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 50%;
+  padding: 6px;
+  margin: 0 .8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container__header .header__navigation .navigation__let-talk .let-talk__socials .socials .fa-brands {
+  font-size: 23px;
+}
+
+.header .container__header .header__navigation .navigation__let-talk .let-talk__socials .socials:hover {
+  -webkit-box-shadow: 0 0 1em var(--color-gray);
+          box-shadow: 0 0 1em var(--color-gray);
+}
+
+.header .container__header .header__navigation .navigation__let-talk .let-talk__socials .twiter .fa-twitter {
+  color: wheat;
+}
+
+.header .container__header .header__navigation .navigation__let-talk .let-talk__socials .instergram .fa-instagram {
+  color: #7e054d;
+}
+
+.header .container__header .header__navigation .navigation__let-talk .let-talk__socials .whatsapp .fa-whatsapp {
+  color: #03b6b6;
+}
+
+.header .container__header .header__navigation .navigation__let-talk a {
+  text-decoration: none;
+  text-transform: capitalize;
+  list-style: none;
+  font-size: 2em;
+  font-family: var(--font-base);
+  color: var(--color-white);
+  margin-bottom: .2em;
+}
+
+.header .container__header .header__navigation .navigation__let-talk a:hover {
+  font-weight: 530;
+}
+
+.header .container__header .header__navigation .fa-list {
+  display: none;
+}
+
+.header__static {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 8;
+  background-color: var(--color-nav);
+}
+
+.show__active {
+  display: block;
+}
+
+.show__mobile {
+  -webkit-animation: animateemnu 1s linear forwards;
+          animation: animateemnu 1s linear forwards;
+}
+
+@-webkit-keyframes animateemnu {
+  from {
+    opacity: 0;
+    z-index: -5;
+  }
+  to {
+    z-index: 5;
+    opacity: 1;
+  }
+}
+
+@keyframes animateemnu {
+  from {
+    opacity: 0;
+    z-index: -5;
+  }
+  to {
+    z-index: 5;
+    opacity: 1;
+  }
+}
+
+.active {
+  opacity: 0;
+  width: .5em;
+  height: .5em;
+  position: absolute;
+  background-color: var(--color-golden);
+  border-radius: 50%;
+  right: calc(50% - .25em);
+  top: -50%;
+}
+
+.show__active__link {
+  opacity: 1;
+}
+/*# sourceMappingURL=Navigation.css.map */
